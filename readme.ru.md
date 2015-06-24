@@ -1,11 +1,12 @@
-# Ion.Range Slider 2.0.10
+# Ion.Range Slider 2.0.10 (mod)
 
 [![](https://pledgie.com/campaigns/25694.png?skin_name=chrome)](https://pledgie.com/campaigns/25694)
 
 > <a href="readme.md">English description</a> | Описание на русском
 
-Удобный, гибкий и отзывчивый слайдер диапазонов
+Это форк удобного, гибкого и отзывчивого слайдера диапазонов с дополнительным типом "balanced" и опцией "min_prefix".
 * <a href="http://ionden.com/a/plugins/ion.rangeSlider/index.html">Страница проекта и демо</a>
+* <a target="_blank" href="http://codepen.io/M_O_Z_G/pen/yNzxOy">Демо дополнительных функций</a> добавленных в **этот** форк <a href="https://github.com/M-O-Z-G">Aleksandr "M.O.Z.G" Dikov<a>
 * <a href="http://ionden.com/a/plugins/ion.rangeSlider/ion.rangeSlider-2.0.10.zip">Download ion.rangeSlider-2.0.10.zip</a>
 
 ***
@@ -25,7 +26,7 @@
 ## Ключевые особенности
 * Поддержка скинов. (5 скина в комплекте и PSD для изготовления собственных)
 * Неограниченное кол-во слайдеров на одной странице без существенных потерь производительности и конфликтов между ними
-* Два режима работы с 1 или 2 ползунками
+* Три режима работы с 1 или 2 ползунками, а так же балансирующий
 * Поддержка отрицательных и дробных значений
 * Возможность редактировать шаг и привязывать сетку к шагу
 * Можно использовать собственный массив значений для слайдера
@@ -33,6 +34,7 @@
 * Отключаемые элементы интерфейса (мин. и макс. значение, текущие значение, сетка)
 * Постфиксы и префиксы для указания единиц измерения ($20, 20 &euro; и т.п.)
 * Дополнительный постфикс для максимального значения (например $0 — $100<b>+</b>)
+* Дополнительный префикс для минимального значения значения (например <b><</b> $10,000 — $50,000)
 * Воможнось улучшить читабельность больших цифр (например 10000000 -> 10 000 000 или 10.000.000)
 * Слайдер пишет свое значение прямо в value исходного поля input, что позволяет вставить сладер прямо внутрь любой формы
 * Любой параметр слайдера можно так же задать через data-атрибут (например data-min="10")
@@ -47,6 +49,7 @@
 * <a href="http://ionden.com/a/plugins/ion.rangeSlider/demo.html" class="switch__item">Базовые настройки</a>
 * <a href="http://ionden.com/a/plugins/ion.rangeSlider/demo_advanced.html" class="switch__item">Расширенные настройки</a>
 * <a href="http://ionden.com/a/plugins/ion.rangeSlider/demo_interactions.html" class="switch__item">Взаимодействия</a>
+* <a target="_blank" href="http://codepen.io/M_O_Z_G/pen/yNzxOy">Демо дополненных фичей</a>
 
 
 ## Зависимости
@@ -326,6 +329,12 @@ $("#example_id").ionRangeSlider();
             <td>Отобразить префикс для значений слайдера. Будет отображен перед цифрой, например $100.</td>
         </tr>
         <tr>
+            <td>min_prefix<div><sup>data-min-prefix</sup></div></td>
+            <td>—</td>
+            <td>string</td>
+            <td>Отобразить дополнительный префикс для минимальнгого значения слайдера. Будет отображен если один из ползунков достигнет крайнего левого значения.  Например <10 — 100</td>
+        </tr>
+        <tr>
             <td>postfix<div><sup>data-postfix</sup></div></td>
             <td>—</td>
             <td>string</td>
@@ -472,6 +481,7 @@ slider.destroy();
 * <a href="http://ionden.com/a/plugins/ion.rangeSlider/demo.html" class="switch__item">Базовые настройки</a>
 * <a href="http://ionden.com/a/plugins/ion.rangeSlider/demo_advanced.html" class="switch__item">Расширенные настройки</a>
 * <a href="http://ionden.com/a/plugins/ion.rangeSlider/demo_interactions.html" class="switch__item">Взаимодействия</a>
+* <a target="_blank" href="http://codepen.io/M_O_Z_G/pen/yNzxOy">Демо дополненных фичей</a>
 
 В демках есть примеры использования всех опций слайдера
 
